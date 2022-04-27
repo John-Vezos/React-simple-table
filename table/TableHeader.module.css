@@ -1,0 +1,10 @@
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-blocK: 30px 20px;
+}
+
+.tableHeader > * {
+    padding-bottom: 10px;
+}

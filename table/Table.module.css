@@ -1,0 +1,72 @@
+.wrapper {
+    margin-inline: auto;
+}
+
+.table {
+    width: 100%;
+    margin-inline: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding-block: .6rem;
+    padding-inline: .3rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+
+.table thead th {
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.table thead th span {
+    position: absolute;
+    right: 5px;
+}
+
+.tNormal {
+    margin-inline: auto;
+}
+
+/* RESPONSIVE*/
+.tResponsive {
+    display: block;
+    margin-inline: auto;
+    overflow-x: auto;
+}
+
+
+/* BORDERED */
+.tBorder {
+    border-block: 1px solid #DEE2E6;
+}
+
+.tBorder thead th {
+    border-bottom: solid #DEE2E6;
+    border-bottom-width: 2px;
+}
+
+.tBorder td {
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.tBorder td:first-of-type,
+.tBorder th:first-of-type {
+    border-inline: 1px solid #DEE2E6;
+}
+
+.tBorder td,
+.tBorder th {
+    border-right: 1px solid #DEE2E6;
+}
+
+/* STRIPPED */
+.tStripped tbody tr:nth-of-type(2n+1) {
+    background-color: #F2F2F2;
+}

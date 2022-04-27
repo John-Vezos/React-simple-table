@@ -1,0 +1,10 @@
+.tableFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.tableResults {
+    padding-block: 20px;
+}

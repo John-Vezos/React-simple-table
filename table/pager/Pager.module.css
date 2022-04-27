@@ -1,0 +1,61 @@
+.pager {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30px;
+    padding: 20px 0 20px;
+    background-color: var(--backgrounColorPager, rgba(255, 255, 255, 0.2));
+
+    --backgrounColorPager: transparent;
+    --backgrounColorPagerNumberHover: rgba(249, 133, 96, .4);
+    --colorPagerNumber: black;
+    --activeColor: white;
+    --activeBgColor: #F98560;
+}
+
+.pager button {
+    border: 0;
+    cursor: pointer;
+}
+
+.pager > div {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pager p,
+.pager button {
+    min-width: 30px;
+    height: clamp(30px, 30px, 30px);
+
+    color: var(--colorPagerNumber, white);
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.pager > div > p,
+.pager > div > button {
+    margin: 0 2px;
+}
+
+
+.pager > div > p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pager button:not(:disabled):active,
+.active {
+    color: var(--activeColor, black) !important;
+    background-color: var(--activeBgColor, white) !important;
+}
+
+
+@media (hover: hover) {
+    .pager button:enabled:hover {
+        background-color: var(--backgrounColorPagerNumberHover, rgb(48, 53, 60));
+    }
+}
